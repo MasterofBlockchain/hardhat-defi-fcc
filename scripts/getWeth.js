@@ -4,21 +4,22 @@
 *and export it to `aaveBorrow.js` with the help of `module.exports`.
 *
 *@read Will call the depoist function on `Weth` contract.
-*For that we need `abi` and `contract address` or `interface` OF `iweth`.
+*For that we need `abi` and `contract address` or `interface`(Iweth) OF `Weth`.
 *
 *@read contract folder
 * will make `Contract folder` and have an Interface of  `IWETH.sol` 
 *AND In `contract folder` we will make another folder names ` interfaces`.
 *
 *@read 
-*now we have `abi` because of interface.
-* will have mainnnet `IEth` address- 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
+*now we have `abi` because of interface(IWeth.sol).
+* will have mainnnet `WEth` address- 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
 *
 *@read 
 * now with help of `abi` and `contract address` DEPLOYER will interact with the account.
 * With interaction we will call the DEPOSIT  function.
 
 *@read 
+*weth interface is similiar to erc20.
 
 *@read FORKING
 *Forked blockchain literally take a copy of the mainnet blockchain and simulate it on locally.
@@ -33,8 +34,13 @@
 * Any time we refrence an Address(means there is something in specfic address)
 *We make an `API` call to our ethereum Node via ALchemy.
 * What API does it -it returns back whatever has in the contract.
+*when we have mainnet address for local testing and `api` of alchemy in hardhat
+*hardhat gets all the data from mainnet while stimulating it.
+*SO `url` in hardhat understand we using mainnet address and need to fetch blokcchain data locally.
 * 
-* 
+* @read 
+* get the `abi` and `contract address` and get it connected with deployer 
+* and BOOM! connection to the contrcat is established.
 
  */
 

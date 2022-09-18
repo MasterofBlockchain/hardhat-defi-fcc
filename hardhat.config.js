@@ -8,6 +8,9 @@ const GOERLI_RPC_URL =
 const PRIVATE_KEY =
     process.env.PRIVATE_KEY ||
     "0x0000000000000000000000000000000000000000000000000000000000000000"
+const PRIVATE_KEY2 =
+    process.env.PRIVATE_KEY2 ||
+    "0x0000000000000000000000000000000000000000000000000000000000000000"
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "key"
 const LOCAL_HOST_API = process.env.LOCAL_HOST_API || "key"
 const COIN_MARKET_CAP_API = process.env.COIN_MARKET_CAP_API || "key"
@@ -24,7 +27,11 @@ const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL
 module.exports = {
     //solidity: "0.8.8",
     solidity: {
-        compilers: [{ version: "0.8.7" }, { version: "0.4.19" }],
+        compilers: [
+            { version: "0.8.7" },
+            { version: "0.4.19" },
+            { version: "0.6.12" },
+        ],
     },
     networks: {
         hardhat: {
